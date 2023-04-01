@@ -7,6 +7,13 @@ import 'checkInternetService.dart';
 class UserService {
   Future signIn(String? username, String? password) async {
     try {
+      // String token = await StorageManager.readData(USER_TOKEN);
+      // String auth = "UPAY $token";
+      // var url = Uri.parse("$END_POINT/profiles?type=PROFILE");
+
+      // var response =
+      //     await http.get(url, headers: {HttpHeaders.authorizationHeader: auth});
+
       SharedPreferences? preferences = await SharedPreferences.getInstance();
       Map body = {'userName': username, 'password': password};
       await CheckInternet.checkInternet();
