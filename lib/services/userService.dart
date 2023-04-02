@@ -7,6 +7,26 @@ import 'checkInternetService.dart';
 class UserService {
   Future signIn(String? username, String? password) async {
     try {
+//  _bookByCustomerProvider =
+//         Provider.of<BookByCustomerProvider>(context, listen: false);
+//     _bookByCustomerProvider!.setBooks_0();
+//     _bookByCustomerProvider!.setBooks_1();
+//     _bookByCustomerProvider!.setBooks_2();
+//     _bookByCustomerProvider!.setBooks_3();
+
+// Consumer<PolicyProvider>(
+//         builder: ((context, policyProvider, child) {
+//           if (policyProvider.isLoading) {
+//             return const Loading();
+//           }
+// return
+// })),
+
+// runApp(MultiProvider[
+//   ChangeNotifierProvider(create: (context) => PolicyProvider()),
+//   child:MyApp()
+// ])
+
       // String token = await StorageManager.readData(USER_TOKEN);
       // String auth = "UPAY $token";
       // var url = Uri.parse("$END_POINT/profiles?type=PROFILE");
